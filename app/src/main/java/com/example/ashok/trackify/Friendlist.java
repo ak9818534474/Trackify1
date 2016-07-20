@@ -30,9 +30,6 @@ public class Friendlist extends AppCompatActivity {
            String username=intent.getStringExtra("username");
            Integer age=intent.getIntExtra("age",1);
 
-
-
-
            tv2.setText(" name = " + name + " username = " + username + " age = " + age);
 
     ViewPager vp=(ViewPager)findViewById(R.id.pageview);
