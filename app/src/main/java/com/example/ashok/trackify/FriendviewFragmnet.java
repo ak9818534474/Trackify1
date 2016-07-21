@@ -37,7 +37,6 @@ public class FriendviewFragmnet extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
        View Fragmnetview = inflater.inflate(R.layout.fragment_friendview_fragmnet, container, false);
-       listView=(ListView)Fragmnetview.findViewById(R.id.Listview);
         String username ,name;
 
         Bundle b = getActivity().getIntent().getExtras();
@@ -50,8 +49,6 @@ public class FriendviewFragmnet extends Fragment {
         friendlist.add(name);
 
 
-
-        listView.setAdapter(new MyAdapter());
         return Fragmnetview;
     }
 

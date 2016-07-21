@@ -13,6 +13,11 @@ import android.view.ViewGroup;
 
 
 public class map1frag extends Fragment {
+
+    public map1frag() {
+        // Required empty public constructor
+    }
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {

@@ -51,17 +51,13 @@ public class MainTrackify1 extends AppCompatActivity {
                     boolean success=jsonObject.getBoolean("success");
                   if(success){
                       String name=jsonObject.getString("name");
-                      String age= (String) jsonObject.get("age");
+                      int id = (Integer) jsonObject.get("userID");
                       Intent intent=new Intent(MainTrackify1.this,Friendlist.class);
-                      intent.putExtra("name",name);
-                      intent.putExtra("username",username);
-                      intent.putExtra("age",age);
+                      intent.putExtra("userID", id);
                      //////////////////////////////////////////////////////////////////////////
                       Intent intent2=new Intent(MainTrackify1.this,FriendviewFragmnet.class);
                       intent2.putExtra("name",name);
                       intent2.putExtra("username",username);
-                      intent2.putExtra("age",age);
-
                       startActivity(intent);
                       finish();
 
@@ -83,5 +79,5 @@ public class MainTrackify1 extends AppCompatActivity {
         RequestQueue requestQueue= Volley.newRequestQueue(MainTrackify1.this);
         requestQueue.add(loginRequest);
     }
-
+    
 }
