@@ -11,4 +11,5 @@
     <string name="title_activity_maps">Map</string>
     <string name="age">Age</string>
     <string name="name">Name</string>
+    <string name="track_by_id">Track By Id</string>
 </resources>

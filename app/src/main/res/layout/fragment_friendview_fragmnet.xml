@@ -1,13 +1,46 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.ashok.trackify.FriendviewFragmnet">
 
     <!-- TODO: Update blank fragment layout -->
-    <ListView
+    <Button
         android:layout_width="match_parent"
-        android:layout_height="466dp"
-        android:id="@+id/Listview"
-        android:layout_gravity="center_horizontal|bottom"></ListView>
-</FrameLayout>
+        android:layout_height="wrap_content"
+        android:text="@string/track_by_id"
+        android:id="@+id/button3"
+        android:layout_gravity="center"
+        android:layout_above="@+id/textView4"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="43dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/textView4"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editText5"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Track Id = "
+        android:id="@+id/textView5"
+        android:layout_marginBottom="66dp"
+        android:layout_above="@+id/button3"
+        android:layout_toStartOf="@+id/editText5" />
+</RelativeLayout>
